@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 10px 20px;
+            margin: 0 auto;
+            width: 300px;
+            height: 400px;
+        }
+
+        button {
+            font-weight: 700;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            background: #4287f5;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        form {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        input {
+            margin: 10px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            border-width: 2px;
+            border-color: rgb(209, 209, 209);
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>💦 Water Reminder 💦</h1>
+        <p>Start Time</p>
+        <input type="datetime-local" name="start" value="" />
+        <br />
+        <p>Repeat me evert (x) minutes</p>
+        <input type="number" min="1" max="60" name="repeat" value="3" placeholder="Reminds in minutes" />
+        <br />
+        <button type="submit">Set Alarm</button>
+    </form>
+    <br />
+    <button id="clear">Clear Alarm</button>
+    <script type="text/javascript" src="./popup.js"></script>
+</body>
+
+</html>
